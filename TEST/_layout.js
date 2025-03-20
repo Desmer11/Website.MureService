@@ -27,14 +27,11 @@ loadContent('../shared/header.html', 'header-content');
 loadContent('../shared/footer.html', 'footer-content');
 
 
-
-// dynamic toggle for media querry
 document.addEventListener("DOMContentLoaded", function () {
     const toggleButton = document.querySelector(".dropdown-toggle");
-    const navBar = document.querySelector(".nav-bar");
+    const dropdownMenu = document.querySelector(".dropdown-menu");
 
     toggleButton.addEventListener("click", function () {
-        navBar.classList.toggle("active");
+        dropdownMenu.classList.toggle("active");
     });
 });
-

@@ -1,0 +1,180 @@
+/* Media Queries for Phones */
+@media only screen and (max-width: 768px) {
+
+    html,
+    body {
+        font-size: 12px;
+    }
+
+    /* Header adjustments */
+    #header {
+        padding: 8px 0;
+    }
+
+    .header-container {
+
+        align-items: center;
+        padding: 0 10px;
+    }
+
+    .logo {
+        width: 30%;
+        height: auto;
+        /* Maintain aspect ratio */
+    }
+
+    .nav-bar .nav-items {
+        flex-direction: column;
+        gap: 5px;
+        align-items: center;
+    }
+
+    .nav-bar .nav-items a {
+        font-size: 0.9rem;
+    }
+
+    .cta-button {
+        padding: 8px 16px;
+        font-size: 0.9rem;
+        width: 30%;
+    }
+
+/* >>>>>>>>>>>>>>>>>>>>>>>>  Dropdown-toggle */
+.nav-bar {
+    display: none;
+    flex-direction: column;
+    background-color: #ffffff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 10px 0;
+    position: absolute;
+    top: 50px;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.nav-bar.active {
+    display: flex;
+}
+
+.dropdown-toggle {
+    display: block;
+    background-color: #ffffff;
+    color: black;
+    border: none;
+    padding: 10px 20px;
+    font-size: 30px;
+    cursor: pointer;
+    border-radius: 8px;
+    width: auto;
+    text-align: left;
+}
+
+.dropdown-toggle:hover {
+    background-color: #17009c;
+}
+
+
+
+
+
+/* >>>>>>>>>>>>>>>>>>>>>>> */
+
+
+
+
+    /* >>>>>>>>>>>>>>>>>>>>>>>>>>>FOOTER */
+
+    #footer {
+        padding: 5px 0;
+        /* Reduce padding for smaller screens */
+        text-align: center;
+        background-color: none;
+        /* Center-align text for simplicity */
+    }
+
+    #footer .footer-content {
+        flex-direction: column;
+        /* Stack items vertically */
+        justify-content: center;
+        /* Center the items */
+        gap: 5px;
+        /* Reduce gap between items */
+    }
+
+    #footer .footer-items {
+        padding: 15px;
+        /* Reduce padding for smaller screens */
+        font-size: 14px;
+        /* Adjust font size */
+    }
+
+    #footer .footer-links {
+        flex-direction: column;
+        /* Stack links vertically */
+        margin-bottom: 10px;
+        /* Add spacing between links and other content */
+    }
+
+    #footer .footer-links a {
+        font-size: 14px;
+        /* Adjust font size */
+    }
+
+    #footer .social-icons {
+        flex-direction: row;
+        /* Keep icons in a row */
+        justify-content: center;
+        /* Center-align icons */
+        gap: 5px;
+        /* Reduce spacing between icons */
+    }
+
+    #footer .social-icons a i,
+    #footer .social-icons a img {
+        font-size: 10px;
+        /* Reduce icon size */
+        width: 10px;
+        /* Adjust image width */
+        height: 10px;
+        /* Adjust image height */
+    }
+
+
+    /* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> MAIN CONTENT */
+
+    .wrapper {
+
+        flex-direction: column;
+        min-height: auto;
+    }
+
+    #background {
+        height: 60%;
+        padding: 0 0 60% 0;
+        /* Allow background to adjust to content */
+        flex: none;
+        /* Prevent it from stretching unnecessarily */
+    }
+
+    .elementor-background-video-hosted {
+        height: 800px;
+        /* Reduce video height for smaller screens */
+    }
+
+    #main-content {
+        margin-top: 60px; /* Adjust based on your header height */
+        padding: 20px;
+        height: auto;
+        box-sizing: border-box; /* Ensure padding is included in height calculation */
+    }
+
+    #main-text {
+        padding: 10px;
+        /* Smaller padding for smaller screens */
+        font-size: 16px;
+        /* Adjust font size */
+        width: 90%;
+        /* Fit content within 90% of the screen */
+    }
+}
