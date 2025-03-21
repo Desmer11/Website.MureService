@@ -1,5 +1,4 @@
-// Dynamically load the header or any external content
-const loadContent = (url, targetId) => {
+const loadContent = (url, targetId, callback) => {
     const targetElement = document.getElementById(targetId);
 
     if (targetElement) {
@@ -12,6 +11,8 @@ const loadContent = (url, targetId) => {
             })
             .then(data => {
                 targetElement.innerHTML = data;
+                console.log(`Content loaded into: ${targetId}`);
+                if (callback) callback(); // Call the callback after content is loaded
             })
             .catch(error => {
                 console.error('Error loading content:', error);
@@ -21,20 +22,19 @@ const loadContent = (url, targetId) => {
     }
 };
 
-
-// Load shared header and footer
-loadContent('../shared/header.html', 'header-content');
-loadContent('../shared/footer.html', 'footer-content');
-
-
-
-// dynamic toggle for media querry
-document.addEventListener("DOMContentLoaded", function () {
+// Load shared header and footer, then initialize toggle
+loadContent('../shared/header.html', 'header-container', () => {
     const toggleButton = document.querySelector(".dropdown-toggle");
     const navBar = document.querySelector(".nav-bar");
 
-    toggleButton.addEventListener("click", function () {
-        navBar.classList.toggle("active");
-    });
+    if (toggleButton && navBar) {
+        toggleButton.addEventListener("click", function () {
+            navBar.classList.toggle("active");
+            toggleButton.classList.toggle("active"); // Add/remove "active" class for animation
+        });
+    } else {
+        console.error("Dropdown toggle button or navigation bar not found.");
+    }
 });
 
+loadContent('../shared/footer.html', 'footer-container');

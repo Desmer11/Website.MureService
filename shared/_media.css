@@ -3,7 +3,7 @@
 
     html,
     body {
-        font-size: 12px;
+        font-size: 18px;
     }
 
     /* Header adjustments */
@@ -16,17 +16,28 @@
         align-items: center;
         padding: 0 10px;
     }
-
+    .logo-section {
+        width: 25vw;
+        height: 50px;
+        margin-left: 0vw;
+        display: flex;
+        align-items: left;
+    
+        gap: 15px;
+    }
     .logo {
-        width: 30%;
-        height: auto;
-        /* Maintain aspect ratio */
+        /* width: 100px; */
+        /* margin-right: 5px; */
+        /* height: auto; */
+        
     }
 
     .nav-bar .nav-items {
         flex-direction: column;
         gap: 5px;
-        align-items: center;
+        align-items: left;
+        margin-top: 50px;
+        margin-left: 20px;
     }
 
     .nav-bar .nav-items a {
@@ -34,49 +45,117 @@
     }
 
     .cta-button {
+
+        margin-right: 0vw;
+        width: 20vw;
+        height: 50px;
+
         padding: 8px 16px;
         font-size: 0.9rem;
-        width: 30%;
+
     }
 
 /* >>>>>>>>>>>>>>>>>>>>>>>>  Dropdown-toggle */
+/* Dropdown menu hidden by default */
 .nav-bar {
-    display: none;
-    flex-direction: column;
+    position: absolute;
+    top: 0px; 
+    left: -100%; 
+    width: 35%; 
+    height: 100vh;
     background-color: #ffffff;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     padding: 10px 0;
-    position: absolute;
-    top: 50px;
-    left: 0;
-    width: 100%;
-    z-index: 1000;
-}
-
-.nav-bar.active {
     display: flex;
+    flex-direction: column;
+    gap: 10px;
+    z-index: 1000;
+    transition: left 0.4s ease; /* Smooth slide-in effect */
+
+    
+
 }
 
+/* Show the menu when active */
+.nav-bar.active {
+    /* Slide into view */
+    left: 0px; 
+}
+
+
+/* Dropdown toggle button */
 .dropdown-toggle {
-    display: block;
-    background-color: #ffffff;
-    color: black;
+    margin-right: 5vw;
+    height: 25px;
+    line-height: 50px;
+    width: 40px; 
+    text-align: right;
+    background-color: #73c5ff;
+
+    position: relative;
+    color: #000;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background: none;
+    border: none;
+    cursor: pointer;
+    z-index: 1100;
+}
+
+.dropdown-toggle span {
+    background-color: #000;
+    position: absolute;
+    width: 100%;
+    height: .154em; /* Adjust thickness of the bars */
+    transition: all 0.3s ease;
+}
+
+/* Adjust positions for the three bars */
+.dropdown-toggle span:nth-child(1) {
+    top: 0; /* Top bar */
+}
+
+.dropdown-toggle span:nth-child(2) {
+    top: 50%; /* Middle bar */
+    transform: translateY(-50%);
+}
+
+.dropdown-toggle span:nth-child(3) {
+    bottom: 0; /* Bottom bar */
+}
+
+/* Transform into a "cross" when active */
+.dropdown-toggle.active span:nth-child(1) {
+    transform: rotate(45deg) translateY(8px);
+}
+
+.dropdown-toggle.active span:nth-child(2) {
+    transform: rotate(-45deg) translateY(-8px);
+}
+
+.dropdown-toggle.active span:nth-child(3) {
+    opacity: 0; /* Hide the middle bar */
+}
+
+.cta-button {
+    background-color: #73c5ff; 
+    
+    margin-right: 5vw;
+    width: 25vw;
+    height: 50px;
+    color: #ffffff; 
     border: none;
     padding: 10px 20px;
-    font-size: 30px;
-    cursor: pointer;
-    border-radius: 8px;
-    width: auto;
+    font-size: 0.7rem;
     text-align: left;
+
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+    /* display: none; */
 }
-
-.dropdown-toggle:hover {
-    background-color: #17009c;
-}
-
-
-
-
 
 /* >>>>>>>>>>>>>>>>>>>>>>> */
 
@@ -87,74 +166,64 @@
 
     #footer {
         padding: 5px 0;
-        /* Reduce padding for smaller screens */
         text-align: center;
         background-color: none;
-        /* Center-align text for simplicity */
+        margin-top: 20px; 
     }
 
-    #footer .footer-content {
+    #footer .footer-container {
         flex-direction: column;
-        /* Stack items vertically */
         justify-content: center;
-        /* Center the items */
         gap: 5px;
-        /* Reduce gap between items */
     }
 
     #footer .footer-items {
         padding: 15px;
-        /* Reduce padding for smaller screens */
         font-size: 14px;
-        /* Adjust font size */
     }
 
     #footer .footer-links {
         flex-direction: column;
-        /* Stack links vertically */
-        margin-bottom: 10px;
-        /* Add spacing between links and other content */
+        margin-bottom: 0px;
     }
 
     #footer .footer-links a {
         font-size: 14px;
-        /* Adjust font size */
+
     }
 
     #footer .social-icons {
         flex-direction: row;
-        /* Keep icons in a row */
         justify-content: center;
-        /* Center-align icons */
         gap: 5px;
-        /* Reduce spacing between icons */
+
     }
 
     #footer .social-icons a i,
     #footer .social-icons a img {
-        font-size: 10px;
-        /* Reduce icon size */
-        width: 10px;
-        /* Adjust image width */
-        height: 10px;
-        /* Adjust image height */
+        font-size: 20px;
+        width: 20px;
+        height: 20px;
+
     }
 
 
     /* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> MAIN CONTENT */
 
     .wrapper {
-
         flex-direction: column;
-        min-height: auto;
+        min-height: 800px;
+        width: 100vw;
+        height: 800px;
+        margin-top: 1px;
+        margin-bottom: 1px;
+    
     }
 
     #background {
-        height: 60%;
-        padding: 0 0 60% 0;
-        /* Allow background to adjust to content */
+        height: 80px;
+        padding: 0 0 0 0;
         flex: none;
-        /* Prevent it from stretching unnecessarily */
     }
 
     .elementor-background-video-hosted {
@@ -163,10 +232,11 @@
     }
 
     #main-content {
-        margin-top: 60px; /* Adjust based on your header height */
-        padding: 20px;
-        height: auto;
-        box-sizing: border-box; /* Ensure padding is included in height calculation */
+
+    
+        padding: 5px;
+  
+        box-sizing: border-box; 
     }
 
     #main-text {

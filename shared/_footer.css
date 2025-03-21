@@ -1,19 +1,36 @@
 /* Footer styles */
 #footer {
     margin-left: auto;
-
-    width: 100%;
+    width: 100vw;
     height: auto;
-    padding: 20px 0; /* Vertical padding only */
-    background-color: #ffffff;
-    color: #000000;
+    background-color: #000;
     text-align: center;
-    box-sizing: border-box; /* Ensures padding does not increase height */
-    opacity: 0.9;
+    box-sizing: border-box; 
+    transition: background-color 0.3s; /* Add transition here */
 }
 
-#footer .footer-content {
-    margin-bottom: 110px;
+#footer:hover {
+    background-color: black; /* Change to black or any other color */
+}
+
+#footer .footer-items {
+    flex: 1; 
+    background-color: #73c5ff;
+    border: 2px solid #fff;
+    border-radius: 8px;
+    padding: 20px; 
+    text-align: center; 
+    color: #000000;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    transition: background-color 0.3s; /* Add transition here */
+}
+
+#footer .footer-items:hover {
+    background-color: #ff6347; /* New background color on hover */
+}
+
+#footer .footer-container {
+    margin-bottom: 70px;
     display: flex;
     justify-content: space-around; /* Spread items evenly */
     align-items: center; /* Vertically align items */
@@ -21,29 +38,33 @@
     gap: 20px;
     flex-wrap: wrap; /* Allow wrapping on smaller screens */
     height: auto; /* Ensure content height doesn't stretch */
+   
+    
+   
 }
 
 #footer .footer-links {
     display: flex;
     justify-content: center;
-    /* gap: 10px; */
     margin-bottom: 0px;
+
+    
 }
 
     #footer .footer-links a {
-        color: #fff;
+        color: #ffffff;
         text-decoration: none;
         font-size: 16px;
-        transition: color 0.3s;
     }
-
-        #footer .footer-links a:hover {
-            color: #17009c;
-        }
+    #footer .footer-links p {
+        color: #ffffff;
+        text-decoration: none;
+        font-size: 16px;
+    }
 
 
 #footer .footer-items {
-    flex: 1; /* Each item takes up equal width */
+    flex: 1; 
     background-color: #73c5ff;
     border: 2px solid #fff;
     border-radius: 8px;
@@ -87,34 +108,47 @@
         }
 
         .tlf {
-            position: fixed; /* Makes the footer stick to the screen */
-            bottom: 0; /* Places the footer at the bottom of the viewport */
-            left: 0; /* Aligns the footer to the left */
-            width: 100%; /* Ensures the footer spans the full width of the viewport */
-            background-color: #73c5ff; /* Optional: Background color for the footer */
-            color: #ffffff;
-            text-align: center; /* Centers the content horizontally */
-            padding: 2px; /* Adds some padding for better aesthetics */
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); /* Subtle shadow */
-            z-index: 999; /* Ensures the footer stays above other content */
+            position: fixed; 
+            bottom: 0px; 
+            width: 100vw;
+            height: 50px;
+            line-height: 10px;
 
-            margin-bottom: 0px;
+            background-color: #73c5ff; 
+            color: #ffffff;
+            text-align: center; 
+            padding: 0px; 
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); 
+            z-index: 999; 
+
+
             border: 2px solid #fff;
             border-radius: 8px;
-            opacity: 0.9;
+            /* opacity: 0.9; */
+           
 
         }
 
         .tlf a {
-            color: #fff;
             text-decoration: none;
-            font-size: 16px;
-            transition: color 0.3s, transform 0.3s;
+
         }
     
-            .tlf a:hover {
-                color: #73c5ff;
-                transform: scale(1.05); /* Slight zoom effect */
-            }
+        #footer .footer-links a,
+        #footer .social-icons a,
+        .tlf a {
+            color: #ffffff;
+            text-decoration: none;
+            font-size: 16px;
+            transition: transform 0.3s, background-color 0.3s; /* Add transition here */
+        }
+        
+        #footer .social-icons a:hover,
+        .tlf a:hover {
+            transform: scale(1.05); /* Slight zoom effect */
+        }
+        
+
+            
 
 /* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */

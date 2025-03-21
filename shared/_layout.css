@@ -26,5 +26,8 @@ html, body {
     font-size: 21px;
     font-weight: 400;
     line-height: 1.6em;
+    height: 100%; /* Ensure full viewport height */
     width: 100wv;
+    margin: 0; /* Remove default margins */
 }
+

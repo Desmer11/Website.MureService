@@ -9,7 +9,7 @@
     position: fixed;
     width: 100%;
     z-index: 999;
-    opacity: 0.9; /* Reduces the transparency of the entire header */
+    /* opacity: 0.9;  */
 }
 
 .header-container {
@@ -23,15 +23,19 @@
 
 /* Logo Section */
 .logo-section {
+    width: 20vw;
+    height: 50px;
+    margin-left: 0vw;
     display: flex;
-    align-items: center;
+    align-items: left;
+
     gap: 15px;
 }
 
 .logo {
-    width: 300px; /* Small, clean logo size */
+    width: 20vw;
     height: 50px;
-    border-radius: 50%; /* Optional rounded logo */
+    border-radius: 50%; 
     object-fit: cover;
 }
 
@@ -43,6 +47,10 @@
 } */
 
 /* Navigation Bar */
+.nav-bar {
+    height: 50px;
+    line-height: 50px;
+}
 .nav-bar .nav-items {
     list-style: none;
     display: flex;
@@ -69,6 +77,11 @@
 /* Call-to-Action Button */
 .cta-button {
     background-color: #73c5ff; 
+
+    margin-right: 0vw;
+    width: 20vw;
+    height: 50px;
+  
     color: #ffffff; 
     border: none;
     padding: 10px 20px;
@@ -80,8 +93,8 @@
 }
 
 .cta-button:hover {
-    background-color: #17009c; 
-    transform: scale(1.05); /* Slight zoom effect */
+    background-color: #73c5ff; 
+    transform: scale(0.90); /* Slight zoom effect */
 }
 
 /* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
