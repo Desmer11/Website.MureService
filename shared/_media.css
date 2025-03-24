@@ -1,5 +1,8 @@
-/* Media Queries for Phones */
-@media only screen and (max-width: 768px) {
+/* Media Queries for Phones and Tablets */
+
+/* @media only screen and (max-width: 768px) - @media only screen and (max-width: 1024px) */
+
+@media only screen and (max-width: 1024px) {
 
     html,
     body {
@@ -248,3 +251,15 @@
         /* Fit content within 90% of the screen */
     }
 }
+
+
+
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> MEDIA TABLETS */
+
+
+
+
+
+
+
+
