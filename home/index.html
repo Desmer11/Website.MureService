@@ -33,8 +33,45 @@
         </div>
         <div id="main-content">
             <div id="main-text">
-                <h1>Jonas Nielsen MureService</h1>
+                <h1>Murermester Voss</h1>
+                <p>
+                    Jeg er din lokale ekspert inden for alt murerarbejde
+                    <br> – med særligt fokus på badeværelser og renovering.
+                    <br>Hos mig er kvalitet og godt håndværk altid i højsædet!
+                    <br><br>
+                    Har du et projekt i tankerne? Kontakt mig i dag, og få et uforpligtende tilbud.
+                    <br>
+                    Sammen skaber vi løsninger, der holder 💪</p>
             </div>
+            <div id="main-form">
+                <h1>Form</h1>
+                <div class="form-container">
+                    <h3>FÅ ET UFORPLIGTENDE TILBUD</h3>
+                    <p>Vi vender tilbage indenfor 24 timer</p>
+                    <form method="post" name="NyForm" action="send_email.php">
+                        <div class="form-group">
+                            <label for="form-name">Navn</label>
+                            <input type="text" id="form-name" name="name" placeholder="Navn" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="form-phone">Telefon</label>
+                            <input type="tel" id="form-phone" name="phone" placeholder="Telefon" required pattern="[0-9()#&amp;+*-=.]+" title="Kun tal og telefonkarakterer (#,-,*, o.s.v.) accepteres.">
+                        </div>
+                        <div class="form-group">
+                            <label for="form-email">E-mail</label>
+                            <input type="email" id="form-email" name="email" placeholder="E-mail" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="form-message">Meddelelse</label>
+                            <textarea id="form-message" name="message" rows="4" placeholder="Skriv din besked" required></textarea>
+                        </div>
+                        <div class="form-group">
+                            <button type="submit">Send</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            
             
         </div>
 

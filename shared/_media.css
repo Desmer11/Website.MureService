@@ -237,19 +237,23 @@
     #main-content {
 
     
-        padding: 5px;
-  
-        box-sizing: border-box; 
+      display: flex;
+    flex-wrap: wrap; /* Enable wrapping */
+    padding: 5px;
+    box-sizing: border-box;
+    justify-content: center; /* Center items in smaller screens */
+    gap: 10px; /* Add space between items */
     }
 
-    #main-text {
-        padding: 10px;
-        /* Smaller padding for smaller screens */
-        font-size: 16px;
-        /* Adjust font size */
-        width: 90%;
-        /* Fit content within 90% of the screen */
+    #main-text, #main-form {
+        flex: 1 1 calc(50% - 20px); /* Each takes up 50% width minus gap on larger screens */
+        max-width: 500px; /* Limit max width */
+        min-width: 250px; /* Allow shrinking but keep it readable */
     }
+
+    #main-text, #main-form {
+        flex: 1 1 100%; /* Each takes the full width */
+        margin: 0; /* Remove auto margin */
 }
 
 
