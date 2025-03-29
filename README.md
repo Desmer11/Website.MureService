@@ -39,9 +39,7 @@ This is a responsive website for a construction and renovation business. The web
 
 
 ### File Structure
-.
-
-
+|
 ├── home/
 │   ├── index.html
 │   ├── index.css
