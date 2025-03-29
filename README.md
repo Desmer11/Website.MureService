@@ -35,21 +35,26 @@ This is a responsive website for a construction and renovation business. The web
 
 - Live Server integration for hot-reloading during development.
 - Bootstrap integration for additional functionality (optional, via CDN).
-- Custom JavaScript files (`_layout.js` and `index.js`) are linked but not detailed here.
+
 
 
 ### File Structure
 .
-├── index.html
+
+
+├── home/
+│   ├── index.html
+│   ├── index.css
+│   └── index.js
 ├── shared/
 │   ├── _layout.css
 │   ├── _header.css
 │   ├── _media.css
 │   └── _footer.css
-├── index.css
-├── media/
+|   └── _layout.js
+|   └── _footer.html
+|   └── _header.html
+├── media/ |background|footer|header|
 │   ├── header/logo.webp
 │   └── background/BackgroundConstructionVideo-1.mp4
-├── scripts/
-│   ├── _layout.js
-│   └── index.js
+
