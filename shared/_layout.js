@@ -23,7 +23,7 @@ const loadContent = (url, targetId, callback) => {
 };
 
 // Load shared header and footer, then initialize toggle
-loadContent('../shared/header.html', 'header-container', () => {
+loadContent('../../shared/header.html', 'header-container', () => {
     const toggleButton = document.querySelector(".dropdown-toggle");
     const navBar = document.querySelector(".nav-bar");
 
@@ -37,4 +37,4 @@ loadContent('../shared/header.html', 'header-container', () => {
     }
 });
 
-loadContent('../shared/footer.html', 'footer-container');
+loadContent('../../shared/footer.html', 'footer-container');
