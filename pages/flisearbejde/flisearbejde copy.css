@@ -1,7 +1,10 @@
 
 
 body, html {
-
+    /* padding-top: 1px;  */
+    /* Prevents collapsing margins  */
+    /* display: flex; */
+    /* flex-direction: column;  */
     margin: 0; /* Remove default margin */
     padding: 1 0 0 0; /* Remove default padding */
     width: 100%; /* Ensure full width */
@@ -83,7 +86,7 @@ body, html {
 }
     #main-text {
 
-        background-color: #006680;
+        background-color: #73c5ff;
         opacity: 0.9;
         color: white;
         padding: 20px;
@@ -107,91 +110,59 @@ body, html {
     }
 
     #main-form {
-        /* background-color: ; */
-        color: black;
+        background-color: #73c5ff;
+        color: white;
         padding: 20px;
-        border-radius: 12px;
-        width: 100%;
-        max-width: 800px;
-        min-width: 320px;
-        margin:  auto;
-        box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+        border-radius: 8px;
+        width: 29.333%;
+        height: 550px;
+        margin: 80px auto;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
         text-align: center;
+        z-index: 2; /* Ensure it stays above the background */
         position: relative;
-        transition: transform 0.3s ease, box-shadow 0.3s ease;
     }
-    
-    #main-form:hover {
-        transform: translateY(-5px);
-        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
-    }
-    
-    /* Form Title */
     #main-form h3 {
-        font-size: 24px;
-        font-weight: bold;
-        margin-bottom: 10px;
-    }
+        margin-bottom: 5px;
+
     
-    #main-form p {
-        font-size: 16px;
-        margin-bottom: 20px;
-    }
-    
-    /* Form Fields */
-    .form-group {
-        margin-bottom: 15px;
-    }
-    
-    input, textarea {
-        width: 100%;
-        padding: 10px;
-        border: 2px solid transparent;
-        border-radius: 6px;
-        font-size: 16px;
-        transition: all 0.3s ease-in-out;
-        outline: none;
-        background: white;
-        color: black;
-    }
-    
-    input::placeholder,
-    textarea::placeholder {
-        color: black;
-    }
-    
-    input:focus, textarea:focus {
-        border-color: white;
-        background: rgba(255, 255, 255, 0.3);
-    }
-    
-    /* Submit Button */
-    .Submit-Button {
-        background-color: black;
-        color: white;
-        border: none;
-        padding: 12px 20px;
-        font-size: 18px;
-        font-weight: bold;
-        border-radius: 6px;
-        cursor: pointer;
-        transition: all 0.3s ease;
-        width: 100%;
-    }
-    
-    .Submit-Button:hover {
-        background-color: #006680;
-        color: white;
-    }
-    
-    /* Responsive Design */
-    @media (max-width: 768px) {
-        #main-form {
-            width: 80%;
-            padding: 20px;
-        }
     }
 
+    #main-form p {
+        margin-bottom: 5px;
+    }
+
+    .form-group {
+        margin-bottom: 5px;
+    }
+
+    label {
+        display: block;
+        margin-bottom: 5px;
+        font-weight: bold;
+    }
+
+    input, textarea {
+        width: 100%;
+        padding: 5px;
+        border: 1px solid #ddd;
+        border-radius: 4px;
+        font-size: 1rem;
+    }
+
+    button {
+        background-color: #0073e6;
+        color: white;
+        padding: 15px 15px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        font-size: 1rem;
+    }
+
+    button:hover {
+        background-color: #005bb5;
+    }
 
 
 /* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> MAIN SECTION 2 */
@@ -239,7 +210,7 @@ body, html {
 }
 
 /* CAROUSEL */
-#carouselExampleAutoplaying {
+.carouselExampleAutoplaying {
     display: flex;
     flex-direction: column;
     width: 100%; /* Fit the width of the box */
@@ -343,6 +314,23 @@ body, html {
 .cta-button:hover {
     background-color: #005bb5;
 }
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .main-section-3-box-container {
+        flex-direction: column; /* Stack boxes vertically */
+        align-items: center; /* Center boxes */
+    }
+
+    .main-section-3-box {
+        max-width: 90%; /* Full-width for smaller screens */
+    }
+
+    .main-section-3-title {
+        font-size: 2rem; /* Adjust font size for smaller screens */
+    }
+}
+
 
 
 .main-section-4 {

@@ -19,8 +19,9 @@
     justify-content: space-between;
     align-items: center;
     max-width: 100vw; /* Centered container */
-    margin: 0 auto;
-    padding: 0 20px; 
+    margin-left: 10px;
+    margin-right: 10px;
+    padding: 0 0 0 0; 
 }
 /* .firm-section {
 
@@ -28,13 +29,12 @@
 
 /* Logo Section */
 .logo-section {
-    width: 5vw;
+    width: 20vw;
     height: 50px;
     margin-left: 0vw;
     display: flex;
-    align-items: left;
-
-    gap: 15px;
+    align-items: center;
+    gap: 5px;
 }
 
 .logo {
@@ -81,16 +81,15 @@
 
 /* Call-to-Action Button */
 .cta-button {
-    background-color: #73c5ff; 
+    background-color: #006680; 
+    color: #ffffff;
 
     margin-right: 0vw;
     width: 20vw;
     height: 50px;
-  
-    color: #ffffff; 
     border: none;
     padding: 10px 20px;
-    font-size: 1rem;
+    font-size: 1rem;    
     font-weight: bold;
     border-radius: 5px;
     cursor: pointer;
@@ -107,5 +106,8 @@
 
 /* Hide the dropdown toggle by default */
 .dropdown-toggle {
+    display: none;
+}
+.dropdown-toggle-box {
     display: none;
 }
