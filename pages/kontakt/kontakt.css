@@ -94,7 +94,7 @@ body, html {
     border-radius: 8px;
     height: 10px;
     width: 100%;
-    margin: 150px 0 70px 0;
+    margin: 100px 0 70px 0;
     text-align: center;
     z-index: 2;
     position: relative;
@@ -170,9 +170,9 @@ input:focus, textarea:focus {
 }
 
 /* Submit Button */
-button {
-    background-color: white;
-    color: #006680;
+.Submit-Button {
+    background-color: black;
+    color: white;
     border: none;
     padding: 12px 20px;
     font-size: 18px;
@@ -183,18 +183,12 @@ button {
     width: 100%;
 }
 
-button:hover {
-    background-color: #f1f1f1;
-    color: #004d66;
+.Submit-Button:hover {
+    background-color: #006680;
+    color: white;
 }
 
-/* Responsive Design */
-@media (max-width: 768px) {
-    #main-form {
-        width: 80%;
-        padding: 20px;
-    }
-}
+
 
 
 /* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> MAIN SECTION 2 */
@@ -210,8 +204,6 @@ button:hover {
     margin: 0; 
     padding: 0; 
 }
-
-
 
 .main-section-2 {
     display: flex; /* Flex layout for side-by-side alignment */
@@ -241,24 +233,6 @@ button:hover {
     overflow: hidden; /* Hides any overflow from the carousel */
 }
 
-/* CAROUSEL */
-.carouselExampleAutoplaying {
-    display: flex;
-    flex-direction: column;
-    width: 100%; /* Fit the width of the box */
-    height: 100%; /* Fit the height of the box */
-    top: 0;
-    left: 0;
-}
-
-.carousel-inner {
-    width: 100%; /* Match parent width */
-    height: 100%; /* Match parent height */
-    object-fit: contain; /* Ensure content fits within the box */
-    position: absolute;
-}
-
-/* CAROUSEL END */
     .main-section-2-box-2 {
     
 
@@ -331,22 +305,6 @@ button:hover {
     margin-bottom: 20px;
 }
 
-/* Call-to-Action Button */
-.cta-button {
-    display: inline-block;
-    padding: 10px 15px;
-    background-color: #0073e6;
-    color: white;
-    text-decoration: none;
-    font-size: 14px;
-    border-radius: 5px;
-    transition: background-color 0.3s ease;
-}
-
-.cta-button:hover {
-    background-color: #005bb5;
-}
-
 /* Responsive Design */
 @media (max-width: 768px) {
     .main-section-3-box-container {
@@ -363,16 +321,11 @@ button:hover {
     }
 }
 
-
-
 .main-section-4 {
     background-color: white;
     color: black;
     opacity: 0.9;
 }
-
-
-
 /* Remove unwanted borders and spacing */
 * {
     border: none; /* Remove any border */

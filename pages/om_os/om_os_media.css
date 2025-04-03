@@ -1,0 +1,25 @@
+/* Responsive Design */
+@media (max-width: 768px) {
+    /* #main-section-1 {
+        
+    } */
+
+    #main-text {
+        height: 50vh;
+        width: 100%;
+        margin: 300px 0 0 0;
+
+        /* padding: 20px; */
+    }
+    #main-text h1{
+        font-size: 26px;
+    }
+    #main-text p{
+        font-size: 14px;
+    }
+
+    #main-form {
+        width: 80%;
+        padding: 20px;
+    }
+}
