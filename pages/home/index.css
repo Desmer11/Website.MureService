@@ -5,6 +5,7 @@ body, html {
     margin: 0; /* Remove default margin */
     padding: 1 0 0 0; /* Remove default padding */
     width: 100%; /* Ensure full width */
+    display: flex;
 }
 
 .wrapper {
@@ -21,8 +22,8 @@ body, html {
 #main-content {
     margin: 0;
     display: column;
-    width: 100vw;
-    height: 100%;
+    width: 100%;
+    height: 100vh;
     position: relative;
     flex: 1;
     text-align: left;
@@ -69,7 +70,7 @@ body, html {
     position: relative; 
     display: flex;
     flex-direction: flex;
-    width: 100vw;
+    width: 100%;
     height: 100vh;
     padding: 5px;
     margin: 0;
@@ -114,7 +115,7 @@ body, html {
         width: 100%;
         max-width: 800px;
         min-width: 320px;
-        margin:  auto;
+        margin: 150px auto;
         box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
         text-align: center;
         position: relative;
@@ -128,6 +129,10 @@ body, html {
     
     /* Form Title */
     #main-form h3 {
+        opacity: 0.9;
+        color: white;
+        padding: 20px;
+        background-color: #006680;
         font-size: 24px;
         font-weight: bold;
         margin-bottom: 10px;
@@ -184,13 +189,7 @@ body, html {
         color: white;
     }
     
-    /* Responsive Design */
-    @media (max-width: 768px) {
-        #main-form {
-            width: 80%;
-            padding: 20px;
-        }
-    }
+
 
 
 
@@ -238,39 +237,6 @@ body, html {
     overflow: hidden; /* Hides any overflow from the carousel */
 }
 
-/* CAROUSEL */
-#carouselExampleAutoplaying {
-    display: flex;
-    flex-direction: column;
-    width: 100%; /* Fit the width of the box */
-    height: 100%; /* Fit the height of the box */
-    top: 0;
-    left: 0;
-}
-
-.carousel-inner {
-    width: 100%; /* Match parent width */
-    height: 100%; /* Match parent height */
-    object-fit: contain; /* Ensure content fits within the box */
-    position: absolute;
-}
-
-/* CAROUSEL END */
-    .main-section-2-box-2 {
-    
-
-    
-        width: 70%; 
-        height: 70vh;
-        margin-left:10% ;
-        margin-right:10% ;
-        box-sizing: border-box;
-
-        background-color: black;
-        color: white;
-        opacity: 0.9;
-        
-    }
 
 /* Main Section Styling */
 .main-section-3 {
@@ -284,76 +250,125 @@ body, html {
     text-align: center;
     box-sizing: border-box;
 }
+    .main-section-3-title {
+        font-size: 2.5rem;
+        color: white;
+        margin-top: 50px;
+        margin-bottom: 30px; /* Space below the title */
+    }
 
-/* Title Styling */
-.main-section-3-title {
-    font-size: 2.5rem;
-    color: white;
-    margin-top: 50px;
-    margin-bottom: 30px; /* Space below the title */
-}
+    /* Box Container Styling */
+    .main-section-3-box-container {
+        display: flex; /* Flex layout for side-by-side boxes */
+        flex-direction: row; /* Horizontal layout */
+        justify-content: center; /* Center boxes horizontally */
+        align-items: stretch; /* Stretch boxes to the same height */
+        gap: 20px; /* Space between boxes */
+        width: 100%; /* Full-width container */
+    }
 
-/* Box Container Styling */
-.main-section-3-box-container {
-    display: flex; /* Flex layout for side-by-side boxes */
-    flex-direction: row; /* Horizontal layout */
-    justify-content: center; /* Center boxes horizontally */
-    align-items: stretch; /* Stretch boxes to the same height */
-    gap: 20px; /* Space between boxes */
-    width: 100%; /* Full-width container */
-}
+    /* Individual Box Styling */
+    .main-section-3-box {
+        flex: 1; /* Equal width for all boxes */
+        max-width: 300px; /* Limit max width */
+        height: auto; /* Adjust height automatically */
+        padding: 20px; /* Internal spacing */
+        background-color: black; /* Background color */
+        color: white; /* Text color */
+        opacity: 0.9; /* Slight transparency */
+        border-radius: 8px; /* Optional: Rounded corners */
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional: Shadow effect */
+        box-sizing: border-box; /* Include padding in dimensions */
+        text-align: left; /* Align text inside boxes */
+    }
 
-/* Individual Box Styling */
-.main-section-3-box {
-    flex: 1; /* Equal width for all boxes */
-    max-width: 300px; /* Limit max width */
-    height: auto; /* Adjust height automatically */
-    padding: 20px; /* Internal spacing */
-    background-color: black; /* Background color */
-    color: white; /* Text color */
-    opacity: 0.9; /* Slight transparency */
-    border-radius: 8px; /* Optional: Rounded corners */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional: Shadow effect */
-    box-sizing: border-box; /* Include padding in dimensions */
-    text-align: left; /* Align text inside boxes */
-}
+    /* Box Titles */
+    .main-section-3-box h2 {
+        margin-bottom: 15px; /* Space below the heading */
+    }
 
-/* Box Titles */
-.main-section-3-box h2 {
-    margin-bottom: 15px; /* Space below the heading */
-}
+    /* Box Content Styling */
+    .main-section-3-box p {
+        margin-bottom: 20px;
+    }
 
-/* Box Content Styling */
-.main-section-3-box p {
-    margin-bottom: 20px;
-}
 
-/* Call-to-Action Button */
-.cta-button {
-    display: inline-block;
-    padding: 10px 15px;
-    background-color: #0073e6;
-    color: white;
-    text-decoration: none;
-    font-size: 14px;
-    border-radius: 5px;
-    transition: background-color 0.3s ease;
-}
-
-.cta-button:hover {
-    background-color: #005bb5;
-}
 
 
 .main-section-4 {
-    background-color: white;
-    color: black;
-    opacity: 0.9;
+    height: 75vh;
+    max-height: 75vh; /* Ensures it doesn't expand beyond this */
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 1px;
+    overflow: hidden; /* Hides any extra content */
 }
+    #carouselExampleAutoplaying {
+        width: 100%;
+        max-width: 1200px; 
+        margin: auto; 
+    }
+    .carousel-inner {
+        object-fit: cover; 
+        height: 100%; 
+    }
+    .carousel-inner img {
+        object-fit: cover; 
+        height: 100%; 
+        max-height: 75vh; 
+        width: 100%;
+    }
+    .carousel-image-container {
+        position: relative; /* Allow absolute positioning of the button */
+    }
+
+.main-section-5 {
+    height: 75vh;
+    max-height: 75vh; 
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 1px;
+    overflow: hidden; /* Hides any extra content */
+}
+    #carouselExampleAutoplaying-section-5 {
+        width: 100%;
+        max-width: 1200px; 
+        margin: auto; 
+    }
+    .carousel-inner-section-5 {
+        object-fit: cover; 
+        height: 100%; 
+    }
+    .carousel-inner-section-5 img {
+        object-fit: cover; 
+        height: 100%; 
+        max-height: 75vh; 
+        width: 100%;
+    }
+
+    /* .cta-button-carousel {
+        position: absolute;
+        top: 50%; 
+        left: 50%;
+        transform: translate(-50%, -50%);
+        padding: 10px 20px;
+        background-color: #006680; 
+        color: white; 
+        text-decoration: none;
+        font-size: 18px;
+        font-weight: bold;
+        border-radius: 5px;
+        transition: background-color 0.3s ease;
+    }
+    
+    .cta-button-carousel:hover {
+        background-color: #004d5c; 
+    } */
 
 
 
-/* Remove unwanted borders and spacing */
 * {
     border: none; /* Remove any border */
     padding: 0; /* Remove padding */

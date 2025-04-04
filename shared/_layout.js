@@ -38,3 +38,9 @@ loadContent('../../shared/header.html', 'header-container', () => {
 });
 
 loadContent('../../shared/footer.html', 'footer-container');
+
+
+var myCarousel = new bootstrap.Carousel(document.getElementById('carouselExampleAutoplaying'), {
+    interval: 5000,
+    ride: 'carousel'
+});
