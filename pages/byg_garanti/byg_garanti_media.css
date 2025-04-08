@@ -17,8 +17,16 @@
         overflow-x: hidden; /* Prevent horizontal scroll */
     }
 
+    
+    
+    /* #background {
+        height: 150vh;
+        flex: 1;
+    } */
+
     .main-h h1 {
-        font-size: 40px; /* Reduce title size */
+        /* margin-top: 80px; */
+        font-size: 30px; /* Reduce title size */
     }
 
     .main-section-1 {

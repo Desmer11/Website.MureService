@@ -40,7 +40,14 @@ loadContent('../../shared/header.html', 'header-container', () => {
 loadContent('../../shared/footer.html', 'footer-container');
 
 
-var myCarousel = new bootstrap.Carousel(document.getElementById('carouselExampleAutoplaying'), {
-    interval: 5000,
-    ride: 'carousel'
+var myCarousel1 = new bootstrap.Carousel(document.getElementById('carouselExampleAutoplaying'), {
+    interval: 2000,
+    ride: 'carousel',
+    wrap: true // Ensures continuous looping
+});
+
+var myCarousel2 = new bootstrap.Carousel(document.getElementById('carouselExampleAutoplaying-section-5'), {
+    interval: 2000,
+    ride: 'carousel',
+    wrap: true // Ensures continuous looping
 });
