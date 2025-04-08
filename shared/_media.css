@@ -146,7 +146,7 @@
     opacity: 0; /* Hide the middle bar */
 }
 
-    .cta-button {
+    .cta-button-header {
         margin: 0 0 0 0;
         line-height: 10px;
         width: 25vw;
@@ -158,6 +158,27 @@
         cursor: pointer;
         transition: background-color 0.3s, transform 0.3s;
         /* display: none; */
+    }
+
+    .cta-button {
+        background-color: #006680; 
+        color: #ffffff;
+    
+        margin-right: 0vw;
+        width: 100%;
+        height: 50px;
+        border: none;
+        padding: 10px 20px;
+        font-size: 1rem;    
+        font-weight: bold;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s, transform 0.3s;
+    }
+    
+    .cta-button:hover {
+        background-color: #73c5ff; 
+        transform: scale(0.90); /* Slight zoom effect */
     }
 
     /* >>>>>>>>>>>>>>>>>>>>>>> */

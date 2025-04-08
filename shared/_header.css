@@ -40,8 +40,8 @@
 .logo {
     width: 20vw;
     height: 50px;
-    border-radius: 50%; 
-    object-fit: cover;
+    /* border-radius: 50%;  */
+    /* object-fit: cover; */
 }
 
 /* .firm-name {
@@ -80,6 +80,27 @@
 }
 
 /* Call-to-Action Button */
+.cta-button-header {
+    background-color: #006680; 
+    color: #ffffff;
+
+    margin-right: 0vw;
+    width: 20vw;
+    height: 50px;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;    
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.cta-button-header:hover {
+    background-color: #73c5ff; 
+    transform: scale(0.90); /* Slight zoom effect */
+}
+
 .cta-button {
     background-color: #006680; 
     color: #ffffff;
@@ -100,6 +121,7 @@
     background-color: #73c5ff; 
     transform: scale(0.90); /* Slight zoom effect */
 }
+
 
 /* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
 
