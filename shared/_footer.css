@@ -161,6 +161,11 @@ font-weight: 600;
         .tlf a:hover {
             transform: scale(1.05); /* Slight zoom effect */
         }
+        #footer .footer-items .copyright {
+            font-size: 12px !important;
+            /* background-color: grey !important */
+
+        }
 
             
 
